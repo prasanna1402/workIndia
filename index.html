@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="explore-page" class="container">
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">Explore</a>
+            <button class="btn btn-outline-success" type="button">Filter</button>
+        </nav>
+        <div class="container mt-3">
+            <input type="text" class="form-control search-bar" id="search-bar" placeholder="Search">
+            <div id="item-list" class="item-list mt-3"></div>
+        </div>
+    </div>
+
+    <div id="add-item-page" class="container d-none">
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">Add Item</a>
+        </nav>
+        <div class="container mt-5">
+            <h3>Add Item</h3>
+            <form id="add-item-form">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="item-name" placeholder="Item Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="item-price" placeholder="Item Price" required>
+                </div>
+                <div class="form-group">
+                    <select class="form-control" id="shipping-method">
+                        <option value="">Shipping Method</option>
+                        <option value="Same Day Shipping">Same Day Shipping</option>
+                        <option value="None">None</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-success btn-block">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <nav class="navbar fixed-bottom navbar-light bg-light">
+        <button class="nav-link btn btn-link" id="nav-explore">
+            <img src="https://placehold.co/30x30.png" alt="Explore"/>
+        </button>
+        <button class="nav-link btn btn-link" id="nav-add-item">
+            <img src="https://placehold.co/30x30.png" alt="Add Item"/>
+        </button>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>
